@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function page1() {
+export default function ErrorPage() {
     return (
         <div>
-            <h1>页面111</h1>
+            找不到页面
         </div>
     )
 }
