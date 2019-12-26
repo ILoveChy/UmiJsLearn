@@ -1,7 +1,6 @@
 /**
  * title: 欢迎页
  * Routes:
- *  - ./src/routes/HandleTitle.js
  *  - ./src/routes/PrivateRouter.js
  */
 import React from 'react'

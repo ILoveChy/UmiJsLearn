@@ -1,12 +1,12 @@
 /**
- * title: 首页
+ * title: sub/a
  */
 import React from 'react'
 
-export default function index() {
+export default function a() {
     return (
         <div>
-            <h1>首页</h1>
+            <h1>sub/a</h1>
         </div>
     )
 }
