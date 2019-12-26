@@ -1,0 +1,12 @@
+.counter {
+    margin: 100px;
+    width: 500px
+}
+
+.counter button {
+    margin: 0 30px;
+}
+
+.title {
+    color: red;
+}
