@@ -119,3 +119,26 @@ css文件 -> css-module -> 对象
 ### less
 
 less代码 -> less-loader -> css代码 -> css-module
+
+## 代理和数据模拟
+
+### 代理
+
+代理用于解决跨域问题 
+
+配置```.umirc.js```中的proxy,配置方式和DevServer中的proxy配置相同
+
+### 数据模拟
+
+用于解决前后端协同开发的问题
+
+数据模拟可以让前端开发者在开发时,无视后端接口是否真正完成
+
+umiJs约定:
+
+1. mock文件夹中的文件
+2. src/pages/_mock.js文件
+
+以上两种js文件均会被umiJs读取,并作为数据模拟的配置
+
+可以自行发挥,添加模拟数据,通常我们会和mockJs配合

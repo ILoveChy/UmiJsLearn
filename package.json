@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "umi-plugin-react": "^1.14.10"
+  },
+  "dependencies": {
+    "mockjs": "^1.1.0"
   }
 }
