@@ -1,11 +1,11 @@
-import React from 'react'
-import { } from '../services/student'
+import React from 'react';
+import { getAllStudents } from '../services/student';
 
-export default function Index() {
-  <h1></h1>
+export default function index() {
+  getAllStudents().then(res => console.log(res));
   return (
-    <h1>
-      {ds}
-    </h1>
-  )
+    <div>
+      <h1>欢迎页</h1>
+    </div>
+  );
 }
