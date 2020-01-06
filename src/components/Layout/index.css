@@ -1,31 +1,27 @@
 .header {
-  position: fixed;
-  height: 50px;
-  line-height: 50px;
-  background: #222;
-  color: #fff;
-  left: 0;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
+    position: fixed;
+    height: 50px;
+    line-height: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .main {
-  position: fixed;
-  top: 50px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .left {
-  width: 200px;
-  height: 100%;
+    float: left;
+    width: 200px;
+    height: 100%;
 }
 
 .right {
-  flex: 1;
-  overflow: auto;
-  height: 100%;
+    overflow: auto;
+    height: 100%;
 }

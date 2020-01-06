@@ -1,9 +1,13 @@
-import { connect } from 'dva';
+import { connect, routerRedux } from 'dva';
 import LoginForm from '../LoginForm';
-
 const mapDispatchToProps = dispatch => ({
-  onLogin(loginId, loginPwd) {
-    dispatch({ type: 'loginUser/login', payload: { loginId, loginPwd } });
+  async onLogin(loginId, loginPwd) {
+    const result = await dispatch({ type: 'loginUser/login', payload: { loginId, loginPwd } });
+    if (result) {
+      dispatch(routerRedux.push('/'));
+    } else {
+      window.alert('账号/密码错误');
+    }
   },
 });
 
