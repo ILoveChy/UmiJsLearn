@@ -1,9 +1,13 @@
 import React from 'react';
-
+import LoginFormContainer from '../components/containers/LoginFormContainer';
 export default function login() {
   return (
     <div>
-      <h1>登陆页</h1>
+      <LoginFormContainer
+        onLogin={(loginId, loginPwd) => {
+          console.log(loginId, loginPwd);
+        }}
+      />
     </div>
   );
 }

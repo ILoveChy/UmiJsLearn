@@ -1,8 +1,12 @@
+/**
+ *  Routes:
+ *      - src/router/PrivateRouter
+ */
 import React from 'react';
 import { getAllStudents } from '../services/student';
 
-export default function index() {
-  getAllStudents().then(res => console.log(res));
+export default function index(props) {
+  // getAllStudents().then(res => console.log(res));
   return (
     <div>
       <h1>欢迎页</h1>
